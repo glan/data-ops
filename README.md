@@ -40,7 +40,7 @@ stringReverse('abc');
 
 ### dataOps.stringReverse._codePointAt(string, index) => `number`
 Gets the Unicode char at a given point with in a string, taking into account surrogate pairs.
-See: [http://en.wikipedia.org/wiki/UTF-16](http://en.wikipedia.org/wiki/UTF-16),
+See: [http://en.wikipedia.org/wiki/UTF-16](http://en.wikipedia.org/wiki/UTF-16) and 
 [charCodeAt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt).
 
 **Params**
