@@ -53,8 +53,12 @@ See: [http://en.wikipedia.org/wiki/UTF-16](http://en.wikipedia.org/wiki/UTF-16) 
 **Example**
 
 ```js
-stringReverse._codePointAt('abc', 0);
+stringReverse._codePointAt('abc🀩', 0);
 > 0x0061
+```
+```js
+stringReverse._codePointAt('abc🀩', 3);
+> 0x1F029
 ```
 
 ### dataOps.binarySearch(subject, value, [startIndex], [endIndex])
