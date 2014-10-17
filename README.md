@@ -22,7 +22,7 @@ dataOps.stringReverse('🐎 redrum');
 
 ## API
 
-### dataOps.binarySearch(subject, value, [startIndex], [endIndex])
+### dataOps.binarySearch(subject, value, [startIndex], [endIndex]) => `number`
 Perform a binary search on a presorted array.
 
 **Params**
