@@ -22,6 +22,25 @@ dataOps.stringReverse('🐎 redrum');
 
 ## API
 
+### dataOps.binarySearch(subject, value, [startIndex], [endIndex])
+Perform a binary search on a presorted array.
+
+**Params**
+
+- subject `array` - array of `numbers`
+- value `number` - value to search for
+- startIndex `number` - the index to start searching from (optional)
+- endIndex `number` - the index to end search on (optional)
+
+**Returns**: `number|undefined` - the index of the value or `undefined` if not found
+
+**Example**
+
+```js
+binarySearch([1,3,7,10], 7);
+> 2
+```
+
 ### dataOps.stringReverse(str) => `string`
 Unicode safe string reversal.
 
@@ -59,25 +78,6 @@ stringReverse._codePointAt('abc🀩', 0);
 ```js
 stringReverse._codePointAt('abc🀩', 3);
 > 0x1F029
-```
-
-### dataOps.binarySearch(subject, value, [startIndex], [endIndex])
-Perform a binary search on a presorted array.
-
-**Params**
-
-- subject `array` - array of `numbers`
-- value `number` - value to search for
-- startIndex `number` - the index to start searching from (optional)
-- endIndex `number` - the index to end search on (optional)
-
-**Returns**: `number|undefined` - the index of the value or `undefined` if not found
-
-**Example**
-
-```js
-binarySearch([1,3,7,10], 7);
-> 2
 ```
 
 ## Development
