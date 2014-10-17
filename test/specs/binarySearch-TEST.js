@@ -7,7 +7,7 @@ var assert = require('chai').assert,
     // number of random attemps to make on each
     attempts = 10;
 
-// Create randomly filled sorted array of a given length
+// Create a sorted randomly filled array of a given length
 function makeSortedRandomArray(length) {
     var i,
         arr = [];
@@ -32,25 +32,25 @@ function findRandomItem(arr) {
 describe('binary search', function () {
     // For each array size
     testSizes.forEach(function (size) {
-        describe('find in ' + size + ' items', function () {
+        describe('with ' + size + ' items', function () {
             // create array
             var ii, arr = makeSortedRandomArray(size);
 
             // check the array is the correct size
             it('array correct size', function (done) {
-                assert.equal(arr.length, size);
+                assert.equal(arr.length, (size < 0) ? 0 : size);
                 done();
             });
 
             // check that we can find the first item
-            it('first item', function (done) {
+            it('found first item', function (done) {
                 assert.equal(binarySearch(arr, arr[0]),
                     0);
                 done();
             });
 
             // check that we can find the last item
-            it('last item', function (done) {
+            it('found last item', function (done) {
                 if (size > 0) {
                     assert.equal(binarySearch(arr, arr[size - 1]),
                         size - 1);
