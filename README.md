@@ -111,4 +111,4 @@ By default gulp runs the following tasks:
 - Unit tests (with code coverage reporting)
 - JShint
 
-Code coverage reports can be found in the [coverage directory](./coverage/lcov-report/index.html).
+Code coverage reports can be found in the [coverage directory](http://glan.github.io/data-ops/coverage/lcov-report/).
